@@ -1,0 +1,71 @@
+:root {
+    --color-background: #1e1e2e;
+    --color-foreground: #cdd6f4;
+    --color-accent: #f5c2e7;
+    --color-muted: #6c7086;
+    font-family: JetBrains Mono, monospace;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure full-page centering */
+}
+
+/* Flex container for Image + Text */
+.greeting-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image on the left */
+.image-container img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Text on the right */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.greeting {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 1.5rem;
+    color: var(--color-muted);
+}
+
+/* Links Table */
+.links {
+    margin-top: 20px;
+}
+
+.links-table {
+    width: auto;
+    border-collapse: collapse;
+}
+
+.links-table th, .links-table td {
+    border: none;
+    padding: 5px;
+    text-align: left;
+}
+
+.links-table th {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
