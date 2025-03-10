@@ -43,7 +43,6 @@ body {
 
 .time {
     font-size: 1.1rem;
-    color: var(--color-links);
     margin-bottom: 0px;
     display: inline-block;
     line-height: 0.5;
