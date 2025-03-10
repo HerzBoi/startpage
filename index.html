@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$HOME</title>
+    <title>Terminal Links</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="greeting-time">
-        <!-- Flex container for Image + Text -->
-        <div class="greeting-container">
-            <div class="image-container">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgratisography.com%2Fwp-content%2Fuploads%2F2024%2F11%2Fgratisography-augmented-reality-800x525.jpg&f=1&nofb=1&ipt=1aff8bead34476ea6c68c914ab7308539a6d6e9056827af90843eeb829bd8ed7&ipo=images" alt="Image">
-            </div>
-
-            <!-- Text section -->
-            <div class="text-container">
-                <h1 class="greeting">Hello, Goose!</h1>
-                <h3 class="time"></h3>
-            </div>
+    <div class="container">
+        
+        <div class="imagey">
+            <img src="arch-cat.PNG" alt="Computer Setup">
         </div>
 
-        
+        <div class="content">
+            <h1 class="greeting" id="greeting">Hello, Goose!</h1>
+            <h3 class="time" id="time"></h3>  
+
+            <div class="links-grid">
+
+                <div class="category">
+                    <h3>School</h3>
+                    <a href="http://connect.drexel.edu/">Connect</a>
+                    <a href="https://outlook.office365.com/">Outlook</a>
+                    <a href="https://www.linkedin.com/in/haard-sanghvi-8938a0261/?trk=opento_sprofile_topcard">linkedin</a>
+                </div>
+
+                <div class="category">
+                    <h3>Linux</h3>
+                    <a href="https://wiki.archlinux.org/title/Main_page">ArchWiki</a>
+                </div>
+
+                <div class="category">
+                    <h3>Games</h3>
+                    <a href="https://www.nexusmods.com/skyrimspecialedition">SkyrimSE</a>
+                    <a href="https://modrinth.com/">Minecraft</a>
+                </div>
+
+                <div class="category">
+                    <h3>Social</h3>
+                    <a href="https://www.reddit.com/">Reddit</a>
+                    <a href="https://www.youtube.com/">Youtube</a>
+                    <a href="https://github.com/HerzBoi">Github</a>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="links">
-        <table class="links-table">
-            <tr>
-                <th>School</th>
-                <th>Games</th>
-                <th>Linux</th>
-                <th>Social</th>
-            </tr>
-            <tr>
-                <td><a href="https://www.schoolsite.com">School Link 1</a></td>
-                <td><a href="https://www.game1.com">Game Link 1</a></td>
-                <td><a href="https://www.linuxsite.com">Linux Link 1</a></td>
-                <td><a href="https://www.socialsite.com">Social Link 1</a></td>
-            </tr>
-            <tr>
-                <td><a href="https://www.university.com">School Link 2</a></td>
-                <td><a href="https://www.steam.com">Game Link 2</a></td>
-                <td><a href="https://www.kernel.org">Linux Link 2</a></td>
-                <td><a href="https://www.facebook.com">Social Link 2</a></td>
-            </tr>
-            <tr>
-                <td><a href="https://www.collegeboard.com">School Link 3</a></td>
-                <td><a href="https://www.epicgames.com">Game Link 3</a></td>
-                <td><a href="https://www.archlinux.org">Linux Link 3</a></td>
-                <td><a href="https://www.twitter.com">Social Link 3</a></td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Time script -->
-    <script>
-        function updateTime() {
-            const now = new Date();
-            const hours = now.getHours();
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const ampm = hours >= 12 ? 'PM' : 'AM';
-            const displayHours = hours % 12 || 12;
-            document.querySelector('.time').textContent = `${displayHours}:${minutes} ${ampm}`;
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
+    <script src="scripts.js"></script>
 
 </body>
-
 </html>
