@@ -59,7 +59,7 @@ You can further customize:
 
 ## Future Enhancements
 
-- [ ] Add weather (`Feels like 25°C 🌤`)  
+- [ ] Add weather (`Feels like 25°C`)  
 - [ ] Make it easily customizable
 
 ---

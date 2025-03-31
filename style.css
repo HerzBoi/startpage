@@ -7,6 +7,7 @@
     --color-links: #b4befe; 
     --color-links-hover: #cba6f7;
     --color-time: #f38ba8;
+    --color-weather: #89b4fa;
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -47,6 +48,16 @@ body {
     display: inline-block;
     line-height: 0.5;
     color: var(--color-time);
+}
+
+
+.weather {
+
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+    display: inline-block;
+    line-height: 0.5;
+    color: var(--color-weather);
 }
 
 .links-grid {
