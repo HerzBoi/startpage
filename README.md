@@ -3,63 +3,63 @@
 A **minimal startpage** for quick access to my frequently visited links.  
 Designed with a clean aesthetic, dynamic greeting, and real-time clock.
 
-![Startpage Preview](screenshot.png)  
+![Screenshot](screenshot.png)  
 
 ---
 
-## Features
+## 3. Usage
 
-- **Dynamic Greeting** → Changes based on the time of day (`Good morning, Goose!`).
-- **Real-Time Clock** → Displays the current time in `12-hour` format (`1:17 AM`).
-- **Custom Links Grid** → Organized by categories (`School`, `Linux`, `Games`, `Social`).
-- **Minimalist Aesthetic** → Inspired by terminal UI, with JetBrains Mono font.
-
----
-
-## Setup
-
-### **1. Clone this repository**
-
-```sh
-git clone https://github.com/yourusername/startpage.git
+```bash
+git clone https://github.com/HerzBoi/startpage.git
 ```
 
-Or simply download the files.
+### Linux
 
-### **2. Customize the Links**
+I use php and autostart this command whenever my computer boots.
 
-Modify the `index.html` file inside:
-
-```html
-<div class="category">
-    <h3>Games</h3>
-    <a href="#">SkyrimSE</a>
-    <a href="#">Minecraft</a>
-</div>
+```bash
+php -S localhost:8000 -t ~/Documents/startpage
 ```
 
-Replace the `#` with actual URLs.
+>For more infomation on how to use it for [**Linux**](https://wiki.archlinux.org/title/Apache_HTTP_Server#PHP).
 
-### **3. Set as Browser Homepage**
+### Windows
 
-1. Open your browser settings.
-2. Set the **New Tab Page / Homepage** to your `index.html` file location.
+For **Windows** use [XAMPP](https://www.apachefriends.org/index.html)
 
----
+### Weather
 
-## Personalization
+To get weather to work just create an account for [weatherapi](https://www.weatherapi.com/) and then copy the API key and paste it in a file called `api-key.txt`.
 
-You can further customize:
+## 4. Personalization
 
-- **Background Color & Fonts** → Modify `style.css`
-- **Greeting Text** → Edit `script.js`
-- **Link Categories & Styling** → Modify the `HTML & CSS`
+- ### **Greeting Text:**
+
+  Edit `script.js` and change the `u_name` variable
+
+- ### **Links:**
+
+    Modify the `index.html` file inside:
+
+    ```html
+    <div class="category">
+        <h3>Games</h3>
+        <a href="#">"name"</a>
+        <a href="#">"name"</a>
+    </div>
+    ```
+
+    Replace the `#` with actual URLs and `"name"` with the alias for the text.
+
+- ### **Image:**
+
+  edit the `imagey` div in the `HTML` file
 
 ---
 
 ## Future Enhancements
 
-- [ ] Add weather (`Feels like 25°C`)  
+- [x] Add weather (`Feels like 25°C`)
 - [ ] Make it easily customizable
 
 ---
